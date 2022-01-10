@@ -10,15 +10,18 @@ public class Adder {
 		System.out.println("Enter second number");
 		int b = sc.nextInt();
 		
-		System.out.println("Enter (1) for addition and (2) for subtraction");
+		System.out.println("Enter (1) for addition and (2) for subtraction (3) for multiplication");
 		int check = sc.nextInt();
 		int c;
 		if(check == 1) {
 			c = a + b;
 		}
 		
-		else {
+		else if(check == 2){
 		c = a - b;
+		}
+		else {
+			c = a * b;
 		}
 		
 		System.out.print("Result: " +c);
